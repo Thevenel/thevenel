@@ -2,7 +2,6 @@
   "name": "portfolio-resume",
   "version": "1.0.0",
   "description": "Thevenel's interactive resume",
-  "proxy": "https://thevenel.github.io/",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel src/*.html",
@@ -12,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Thevenel/thevenel.git"
+    "url": "git+https://github.com/Thevenel/thevenel.git/"
   },
   "keywords": [
     "Full",
@@ -30,7 +29,7 @@
   "bugs": {
     "url": "https://github.com/Thevenel/thevenel/issues"
   },
-  "homepage": "https://github.com/Thevenel/thevenel#readme",
+  "homepage": "https://thevenel.github.io/thevenel",
   "dependencies": {
     "@popperjs/core": "^2.11.7",
     "bootstrap": "^5.2.3",
