@@ -1,0 +1,8 @@
+{
+  "/api": {
+    "target": "https://thevenel.github.io/",
+    "pathRewrite": {
+      "": ""
+    }
+  }
+}

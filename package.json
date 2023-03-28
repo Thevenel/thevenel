@@ -2,10 +2,11 @@
   "name": "portfolio-resume",
   "version": "1.0.0",
   "description": "Thevenel's interactive resume",
-  "main": "index.js",
+  "proxy": "https://thevenel.github.io/",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel src/*.html",
-    "predeploy": "rm -rf dist && parcel build ./*.html --public-url https://github.com/Thevenel/thevenel",
+    "predeploy": "rm -rf dist && parcel build src/*.html src/js/*.js src/scss/*.scss --public-url https://github.com/Thevenel/thevenel",
     "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
