@@ -1,0 +1,42 @@
+{
+  "name": "portfolio-resume",
+  "version": "1.0.0",
+  "description": "Thevenel's interactive resume",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "predeploy": "rm -rf dist && parcel build ./*.html --public-url https://github.com/Thevenel/thevenel",
+    "deploy": "gh-pages -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thevenel/thevenel.git"
+  },
+  "keywords": [
+    "Full",
+    "Stack",
+    "Developper",
+    "Thevenel",
+    "Joazard",
+    "HTML",
+    "Python",
+    "Django",
+    "React"
+  ],
+  "author": "Thevenel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thevenel/thevenel/issues"
+  },
+  "homepage": "https://github.com/Thevenel/thevenel#readme",
+  "dependencies": {
+    "@popperjs/core": "^2.11.7",
+    "bootstrap": "^5.2.3",
+    "gh-pages": "^5.0.0",
+    "parcel": "^2.8.3"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3"
+  }
+}
