@@ -1,925 +1,1156 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Thevenel Joazard"/>	
-	<meta name="description" content="I'm Thevenel Joazard, a full stack webdeveloper / creative programmer with good knowledge of front-end techniques and solid design background."/>
-	<meta name="keywords" content="Thevenel Joazard, Interactive Resume, Python programmer, Web developer, Startup, Interactive CV, Resume, CV, Designer, React, C, Algorithms, PHP, MySQL, OOP"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Thevenel Joazard" />
+    <meta
+      name="description"
+      content="I'm Thevenel Joazard, a full stack web developer / creative programmer with good knowledge of front-end techniques and solid design background."
+    />
+    <meta
+      name="keywords"
+      content="Thevenel Joazard, Interactive Resume, Python programmer, Web developer, Startup, Interactive CV, Resume, CV, Designer, React, C, Algorithms, Java Developper, PHP, MySQL, OOP"
+    />
     <title>Thevenel Joazard | Full Stack Developper - Interactive Resume</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/ace3c5b255.js" crossorigin></script>
-    <link rel="shortcut icon" href="../assets/favicon/favicon-32x32.png" type="image/x-icon"/>
-		<link rel="icon" href="../assets/favicon/favicon-32x32.png" type="image/x-icon"/>
-    <link rel="stylesheet" href="scss/styles.scss" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ace3c5b255.js"
+      crossorigin
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="../assets/favicon/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="scss/styles.scss" crossorigin />
     <script type="module" src="js/main.js" crossorigin></script>
   </head>
-  <body data-spy="scroll" data-target="#navMenu" class="fixed" >
+  <body data-spy="scroll" data-target="#navMenu" class="fixed">
+    <!-- Hero-->
 
-     <!-- Hero-->
-    
-<div class="container-fluid hero">
-    <div class="overlay"></div>
-    <a href="#profile" class="scroll-down">	
+    <div class="container-fluid hero">
+      <div class="overlay"></div>
+      <a href="#profile" class="scroll-down">
         <i class="fas fa-chevron-down go-down hidden-phone"></i>
-    </a>
-</div>
+      </a>
+    </div>
 
- <!-- Nav bar-->
- 
- <nav class="navbar navbar-expand-lg" id="navMenu">
-    <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="nav navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active fw-bold" aria-current="page" href="#profile">Profile</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#experiences">Experiences</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#abilities">Abilities</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
+    <!-- Nav bar-->
+
+    <nav class="navbar navbar-expand-lg" id="navMenu">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="nav navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active fw-bold"
+                aria-current="page"
+                href="#profile"
+                >Profile</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experiences">Experiences</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#abilities">Abilities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Profile-->
+
+    <div class="white-bg">
+      <div id="profile" class="container-sm pt-5">
+        <div class="container d-flex">
+          <img
+            class="mx-auto w-25 rounded-circle"
+            src="../assets/id.jpg"
+            alt="Thevenel's photo"
+            crossorigin
+          />
+        </div>
+        <div class="container pb-5">
+          <h1 class="fw-normal text-center">Hello, I'm Thevenel!</h1>
+          <p
+            class="fs-5 fw-light text-gray-100 mb-0 text-center w-75 mx-auto desc-intro"
+          >
+            I'm known as a <strong>Full Stack Web Developer</strong>, but you
+            can call me Jay. I love a good challenge, especially when it
+            involves crafting beautiful and user-friendly websites. My friends
+            would describe me as someone who pays close attention to detail,
+            loves organization, and thrives in collaborative environments.
+          </p>
+          <p
+            class="fs-5 fw-light text-gray-100 mb-0 text-center w-75 mx-auto desc-intro"
+          >
+            As a computer science student with a knack for programming and
+            design, I find joy in creating things.
+          </p>
+          <p class="fw-normal text-center text-primary">
+            Melodies and code, that's my life!
+          </p>
+        </div>
       </div>
     </div>
-  </nav>
 
-  <!-- Profile-->
+    <!-- Experiences-->
 
-  <div class="white-bg">
-    <div id="profile" class="container-sm pt-5">
-        <div class="container d-flex">
-            <img class="mx-auto w-25 rounded-circle" src="../assets/id.jpg" alt="Thevenel's photo" crossorigin>
-        </div>    
-        <div class="container pb-5">
-            <h1 class="fw-normal text-center">Hello, I'm Thevenel!</h1>
-            <p class="fs-5 fw-light text-gray-100 mb-0 text-center w-75 mx-auto desc-intro">
-                I'm known as a <strong>Full Stack Web Developer</strong>, but you can call me Jay. 
-                I love a good challenge, especially when it involves crafting beautiful 
-                and user-friendly websites. My friends would describe me as someone who 
-                pays close attention to detail, loves organization, and thrives in collaborative 
-                environments.
-            </p>
-            <p class="fs-5 fw-light text-gray-100 mb-0 text-center w-75 mx-auto desc-intro"> As a computer science student with a knack for programming and design, 
-                I find joy in creating things.</p>
-            <p class="fw-normal text-center text-primary" >Melodies and code, that's my life!</p>
-        </div>
-        </div>
-</div>
-
-<!-- Experiences-->
-
-<div id="experiences" class="container-sm container">
-    <h2 class="text-center display-2">Experiences</h2>
-    <figure class="text-center">
+    <div id="experiences" class="container-sm container">
+      <h2 class="text-center display-2">Experiences</h2>
+      <figure class="text-center">
         <blockquote class="blockquote">
           <p>Experience is the teacher of all things.</p>
         </blockquote>
         <figcaption class="blockquote-footer">
-            Julius Caesar in <cite title="Source Title">Commentaries on the Civil War</cite>
+          Julius Caesar in
+          <cite title="Source Title">Commentaries on the Civil War</cite>
         </figcaption>
       </figure>
-       <hr>
-    <h3 class="display-4 mb-4">Education</h3>
-    <div class="experiences">
+      <hr />
+      <h3 class="display-4 mb-4">Education</h3>
+      <div class="experiences">
         <div class="experience row">
-            <div class="col-md-4">
-                <h4 class="fs-5">Johannes Gutenberg-Universität</h4>
-                <p class="fw-lighter">currently</p>
-            </div>
-            <div class="col-md-8">
-                <p><strong>Erasmus+ student at the Computer Science department</strong></p>
-                <p class="fw-lighter">Enhanced my computer science skillset through challenging 
-                    coursework at Johannes Gutenberg Universität during my Erasmus year. Developed 
-                    critical thinking and problem-solving abilities through logic programming and 
-                    advanced functional programming. Gained a deep understanding of diverse database 
-                    systems (OLTP & OLAP) through dedicated courses. Broadened my programming language 
-                    proficiency by learning Rust, a statically typed language.
-                </p>
-                <p class="fw-lighter text-primary"><i class="fa fa-map-marker-alt"></i> Mainz, Germany</p>
-            </div>
+          <div class="col-md-4">
+            <h4 class="fs-5">IUT de Lille (Université de Lille)</h4>
+            <p class="fw-lighter">currently</p>
+          </div>
+          <div class="col-md-8">
+            <p>
+              <strong
+                >BUT 3 Informatique - Conception, Development,
+                Validation</strong
+              >
+            </p>
+            <p class="fw-lighter">
+              After building a strong foundation in core computer science
+              concepts, I enrolled at the IUT of Lille to gain practical
+              experience. With Java as the primary language, I focused on
+              mastering object-oriented programming. My goal was to design and
+              develop robust software while expanding my proficiency in various
+              Java frameworks.
+            </p>
+            <p class="fw-lighter text-primary">
+              <i class="fa fa-map-marker-alt"></i> Lille, France
+            </p>
+          </div>
         </div>
         <div class="experience row">
-            <div class="col-md-4">
-                <h4 class="fs-5">Université de Picardie Jules Verne</h4>
-                <p class="fw-lighter">currently</p>
-            </div>
-            <div class="col-md-8">
-                <p><strong>Computer Engineering</strong></p>
-                <p class="fw-lighter">During my first year of computer science studies in Amiens, 
-                    I laid a strong foundation in the fundamentals of computing. I delved into the 
-                    inner workings of computers, exploring both their hardware structure and the principles 
-                    of electronics governing their operation. This included learning essential topics like boolean
-                     algebra and computer architecture. Additionally, I embarked on a journey into the world of algorithms,
-                      grasping various sorting and searching techniques and their associated complexities.
-                </p>
-                <p class="fw-lighter text-primary"><i class="fa fa-map-marker-alt"></i> Amiens, France</p>
-            </div>
+          <div class="col-md-4">
+            <h4 class="fs-5">Johannes Gutenberg-Universität</h4>
+            <p class="fw-lighter">2023-2024</p>
+          </div>
+          <div class="col-md-8">
+            <p>
+              <strong
+                >Erasmus+ student at the Computer Science department</strong
+              >
+            </p>
+            <p class="fw-lighter">
+              During my Erasmus year at Johannes Gutenberg Universität, I
+              significantly enhanced my computer science skills. I developed
+              critical thinking and problem-solving abilities through rigorous
+              coursework in logic and functional programming. My database
+              knowledge expanded to encompass both OLTP and OLAP systems. I
+              broadened my programming language repertoire by learning Rust and
+              implementing a language interpreter in Scala, solidifying core
+              programming concepts. Additionally, I gained valuable project
+              management skills through dedicated coursework.
+            </p>
+            <p class="fw-lighter text-primary">
+              <i class="fa fa-map-marker-alt"></i> Mainz, Germany
+            </p>
+          </div>
+        </div>
+        <div class="experience row">
+          <div class="col-md-4">
+            <h4 class="fs-5">Université de Picardie Jules Verne</h4>
+            <p class="fw-lighter">2022-2024</p>
+          </div>
+          <div class="col-md-8">
+            <p><strong>Computer Engineering</strong></p>
+            <p class="fw-lighter">
+              During my first year of computer science studies in Amiens, I laid
+              a strong foundation in the fundamentals of computing. I delved
+              into the inner workings of computers, exploring both their
+              hardware structure and the principles of electronics governing
+              their operation. This included learning essential topics like
+              boolean algebra and computer architecture. Additionally, I
+              embarked on a journey into the world of algorithms, grasping
+              various sorting and searching techniques and their associated
+              complexities.
+            </p>
+            <p class="fw-lighter text-primary">
+              <i class="fa fa-map-marker-alt"></i> Amiens, France
+            </p>
+          </div>
         </div>
 
         <div class="experience row">
-            <div class="col-md-4">
-                <h4 class="fs-5">University of the People</h4>
-                <p class="fw-lighter">Since 2021</p>
-            </div>
-            <div class="col-md-8">
-                <p><strong>Computer Science</strong></p>
-                <p class="fw-lighter">Continuously expanding my computer science knowledge 
-                    by taking one or two courses per semester. This ongoing learning deepens
-                     my transversal understanding of the field while allowing me to develop 
-                     in-depth skills in programming languages like Python and Java, along with 
-                     areas like statistics.
-                </p>
-                <p class="fw-lighter text-primary"><i class="fa fa-map-marker-alt"></i> Dominican Republic</p>
-            </div>
+          <div class="col-md-4">
+            <h4 class="fs-5">University of the People</h4>
+            <p class="fw-lighter">Since 2021</p>
+          </div>
+          <div class="col-md-8">
+            <p><strong>Computer Science</strong></p>
+            <p class="fw-lighter">
+              Continuously expanding my computer science knowledge by taking one
+              or two courses per semester. This ongoing learning deepens my
+              transversal understanding of the field while allowing me to
+              develop in-depth skills in programming languages like Python and
+              Java, along with areas like statistics.
+            </p>
+            <p class="fw-lighter text-primary">
+              <i class="fa fa-map-marker-alt"></i> USA / Online
+            </p>
+          </div>
         </div>
 
         <div class="experience row">
-            <div class="col-md-4">
-                <h4 class="fs-5">Cincinnatus Institute of Craftsmanship</h4>
-                <p class="fw-lighter">2019-2021</p>
-            </div>
-            <div class="col-md-8">
-                <p><strong>Software development</strong></p>
-                <p class="fw-lighter">I honed my software development skills through a project-based curriculum 
-                    at Cincinnatus Institute of Craftmanship in the Dominican Republic.This unique institute embraces 
-                    "learning by doing," empowering students with hands-on projects for every technology learned. 
-                    As an example, I built a <a href="https://github.com/Thevenel/Dominoes-project">Domino</a> to solidify my understanding of 
-                    object-oriented programming principles.
-                    My journey at <a href="https://cincinnatus.edu.do/">Cincinnatus</a> encompassed various programming languages, starting with JavaScript, Python, 
-                    which quickly became my favorite. After mastering the core functionalities, we delved 
-                    into practical libraries like jQuery, Bootstrap, and Flask to enhance developer productivity. 
-                    This journey also included acquiring the foundational web development skills of HTML and CSS.
-                </p>
-                <p class="fw-lighter text-primary"><i class="fa fa-map-marker-alt"></i> Santiago, Dominican Republic</p>
-            </div>
+          <div class="col-md-4">
+            <h4 class="fs-5">Cincinnatus Institute of Craftsmanship</h4>
+            <p class="fw-lighter">2019-2021</p>
+          </div>
+          <div class="col-md-8">
+            <p><strong>Software development</strong></p>
+            <p class="fw-lighter">
+              I honed my software development skills through a project-based
+              curriculum at Cincinnatus Institute of Craftmanship in the
+              Dominican Republic.This unique institute embraces "learning by
+              doing," empowering students with hands-on projects for every
+              technology learned. As an example, I built a
+              <a href="https://github.com/Thevenel/Dominoes-project">Domino</a>
+              to solidify my understanding of object-oriented programming
+              principles. My journey at
+              <a href="https://cincinnatus.edu.do/">Cincinnatus</a> encompassed
+              various programming languages, starting with JavaScript, Python,
+              which quickly became my favorite. After mastering the core
+              functionalities, we delved into practical libraries like jQuery,
+              Bootstrap, and Flask to enhance developer productivity. This
+              journey also included acquiring the foundational web development
+              skills of HTML and CSS.
+            </p>
+            <p class="fw-lighter text-primary">
+              <i class="fa fa-map-marker-alt"></i> Santiago, Dominican Republic
+            </p>
+          </div>
         </div>
 
         <div class="experience row">
-            <div class="col-md-4">
-                <h4 class="fs-5">Institution Professionnelle Frontalière Nord'Est</h4>
-                <p class="fw-lighter">2009</p>
-            </div>
-            <div class="col-md-8">
-                <p><strong>Computer maintenance and Repair</strong></p>
-                <p class="fw-lighter">Developed a passion for computers at an early age, gaining an understanding
-                     of internal components, functionality, and basic troubleshooting. This included learning to 
-                     update BIOS, install operating systems, and perform hardware and software repairs. 
-                     I also mastered the Microsoft Office suite, demonstrating proficiency in essential 
-                     productivity tools.
-                </p>
-                <p class="fw-lighter text-primary"><i class="fa fa-map-marker-alt"></i> Ouanaminthe, Haiti</p>
-            </div>
+          <div class="col-md-4">
+            <h4 class="fs-5">
+              Institution Professionnelle Frontalière Nord'Est
+            </h4>
+            <p class="fw-lighter">2009</p>
+          </div>
+          <div class="col-md-8">
+            <p><strong>Computer maintenance and Repair</strong></p>
+            <p class="fw-lighter">
+              Developed a passion for computers at an early age, gaining an
+              understanding of internal components, functionality, and basic
+              troubleshooting. This included learning to update BIOS, install
+              operating systems, and perform hardware and software repairs. I
+              also mastered the Microsoft Office suite, demonstrating
+              proficiency in essential productivity tools.
+            </p>
+            <p class="fw-lighter text-primary">
+              <i class="fa fa-map-marker-alt"></i> Ouanaminthe, Haiti
+            </p>
+          </div>
         </div>
 
         <h4 class="display-5">Other Courses and Events</h4>
         <div class="experience row">
-            <div class="col-md-4">
-                <p class="fw-lighter">Febraury 2023</p>
-            </div>
-            <div class="col-md-8">
-                <p><strong>PyConFr 2023</strong></p>
-                <p class="fw-lighter">Expanded my Python knowledge by participating in PyConFr, 
-                    the premier Python conference for the French community. I actively contributed 
-                    to the translation workshop, gaining a deeper understanding of the language's 
-                    core mechanisms. This hands-on experience involved translating significant portions 
-                    of the official documentation, further solidifying my proficiency in Python.
-                </p>
-                <p class="fw-lighter text-primary"><i class="fa fa-map-marker-alt"></i> Bordeaux, France</p>
-            </div>
-        </div>
-        <div class="experience row">
-            <div class="col-md-4">
-                <p class="fw-lighter">October 2022</p>
-            </div>
-            <div class="col-md-8">
-                <p><strong>PyConES 2022</strong></p>
-                <p class="fw-lighter">Enriched my Python knowledge and connected with the Spanish 
-                    Python community at PyConES. This immersive conference provided valuable learning 
-                    opportunities and fostered collaboration among Python enthusiasts.
-                </p>
-                <p class="fw-lighter text-primary"><i class="fa fa-map-marker-alt"></i> Granada, Spain</p>
-            </div>
-        </div>
-        <div class="experience row">
-            <div class="col-md-4">
-                <p class="fw-lighter">October 2022</p>
-            </div>
-            <div class="col-md-8">
-                <p><strong>DjangoCon Europe 2022</strong></p>
-                <p class="fw-lighter">Deepened my understanding of Django and connected with the European Django community 
-                    during DjangoCon Europe in Portugal. This vibrant conference offered a wealth of insights into the latest 
-                    Django developments and best practices, fostering collaboration and knowledge exchange among Django developers.
-                </p>
-                <p class="fw-lighter text-primary"><i class="fa fa-map-marker-alt"></i> Porto, Portugal</p>
-            </div>
-        </div>
-        <div class="experience row">
-            <div class="col-md-4">
-                <h4 class="fs-5">Udacity</h4>
-                <p class="fw-lighter">2020</p>
-            </div>
-            <div class="col-md-8">
-                <p><strong>Full Stack Foundation</strong></p>
-                <p class="fw-lighter">This course was essentially about the CRUD operations. I have learned 
-                    how to model, design and develop a complete database. I have learned to use
-                    SQLAlchemy to interact with the database through python code using the Flask framework.
-                </p>
-                <p class="fw-lighter text-primary"><i class="fa fa-map-marker-alt"></i> Online</p>
-            </div>
-        </div>
-        <div class="experience row">
-            <div class="col-md-4">
-                <h4 class="fs-5">Udacity</h4>
-                <p class="fw-lighter">2020</p>
-            </div>
-            <div class="col-md-8">
-                <p><strong>Introduction to Computer Science with Python</strong></p>
-                <p class="fw-lighter">In this course, I have learned the practical part of computer
-                    operations using Python programming language. I have learned about memory address,
-                    web crawler, and recursion. I was able to create a search engine after completing this course.
-                </p>
-                <p class="fw-lighter text-primary"><i class="fa fa-map-marker-alt"></i> Online</p>
-            </div>
-        </div>
-    </div>
-    <hr>
-    <h3 class="display-4 mb-4">Career</h3>
-    <div class="experiences">
-        <div class="experience row">
-            <div class="col-md-4">
-                <h4 class="fs-5">Extramus</h4>
-                <p class="fw-lighter">Summer 2023</p>
-            </div>
-            <div class="col-md-8">
-                <p><strong>Full stack Web Developer - Intern</strong></p>
-                <p class="fw-lighter">Leveraged my full-stack web development skills during a summer internship (2023) at <a href="https://www.extramus.eu/">Extramus</a> in Italy. 
-                    Contributed to the planning, development, and deployment of a <a href="https://new.negombo.it/">Booking web application</a> using Laravel (PHP framework) and React (frontend framework). 
-                    Gained valuable experience with PHP, Laravel, and the Axios library for API communication.
-                </p>
-                <p class="fw-lighter text-primary"><i class="fa fa-map-marker-alt"></i> Terranova da Sibari, Italy</p>
-            </div>
-        </div>
-        
-        <div class="experience row">
-            <div class="col-md-4">
-                <h4 class="fs-5">Editions Milot</h4>
-                <p class="fw-lighter">2021-2023</p>
-            </div>
-            <div class="col-md-8">
-                <p><strong>Graphic Designer / Web Master</strong></p>
-                <p class="fw-lighter"><a href="https://www.editionsmilot.com/">Editions Milot</a> is a Publishing agency and I am the one responsible
-                    for the layout, cover of the book also for creating and managing the website.
-                </p>
-                <p class="fw-lighter text-primary"><i class="fa fa-map-marker-alt"></i> Paris, France</p>
-            </div>
-        </div>
-
-        <div class="experience row">
-            <div class="col-md-4">
-                <h4 class="fs-5">Cloud Campus</h4>
-                <p class="fw-lighter">2022</p>
-            </div>
-            <div class="col-md-8">
-                <p><strong>Freelancer Teacher</strong></p>
-                <p class="fw-lighter">Leveraged my expertise in modern web development by teaching courses on BEM and Bootstrap at Cloud Campus, 
-                    receiving positive feedback from students for my clear explanations and engaging teaching style."
-                </p>
-                <p class="fw-lighter text-primary"><i class="fa fa-map-marker-alt"></i> Paris, France</p>
-            </div>
-        </div>
-
-        <div class="experience row">
-            <div class="col-md-4">
-                <h4 class="fs-5">Doranco</h4>
-                <p class="fw-lighter">October 2021</p>
-            </div>
-
-            <div class="col-md-8">
-                <p><strong>Freelancer Teacher</strong></p>
-                <p class="fw-lighter">Shared my web development knowledge by briefly teaching introductory courses on WordPress, HTML, and CSS at Doranco.</p>
-                <p class="fw-lighter text-primary"><i class="fa fa-map-marker-alt"></i> Paris, France</p>
-            </div>
-        </div>
-
-        <div class="experience row">
-            <div class="col-md-4">
-                <h4 class="fs-5">Cabinet Mutation</h4>
-                <p class="fw-lighter">2014-2020</p>
-            </div>
-            <div class="col-md-8">
-                <p><strong>IT Manager</strong></p>
-                <p class="fw-lighter">The Lawyer office deals different type of files and one has to make sure that
-                    the files are organized in one place so they can be retrieve at any moment. So, I had to put 
-                    every computer on the same network so they can communicate with each other.
-                </p>
-                <p class="fw-lighter text-primary"><i class="fa fa-map-marker-alt"></i> Ouanaminthe, Haiti</p>
-            </div>
-        </div>
-        <div class="experience row">
-            <div class="col-md-4">
-                <h4 class="fs-5">Michelet Entreprises</h4>
-                <p class="fw-lighter">2016-2021</p>
-            </div>
-            <div class="col-md-8">
-                <p><strong>IT Consultant</strong></p>
-                <p class="fw-lighter">Michelet is a multi purpose enterprise. They have an Hotel (Don Chelo), hardware Store (Michelet Matériaux de Construction), 
-                    a mall and a photography studio. My role was to help them with purcharsing new computer and make sure they are update with the latest software. </p>
-                <p class="fw-lighter text-primary"><i class="fa fa-map-marker-alt"></i> Ouanaminthe, Haiti</p>
-            </div>
-        </div>
-        <div class="experience row">
-            <div class="col-md-4">
-                <h4 class="fs-5">Hope for Haiti Children’s Center</h4>
-                <p class="fw-lighter text-primary">2012-2015</p>
-            </div>
-            <div class="col-md-8">
-                <p><strong>Office Computer Teacher</strong></p>
-                <p class="fw-lighter">At Hope for Haiti Children’s Center, I taught windows XP, vista and 7. I also taught different software in the Microsoft Office package
-                    (Word, Excel, PowerPoint, Access and Publisher).
-                </p>
-                <p class="fw-lighter text-primary"><i class="fa fa-map-marker-alt"></i> Ouanaminthe, Haiti</p>
-            </div>
-        </div>
-        
-    </div>
-    <hr>
-    <h3 class="display-4 mb-4">Activities</h3>
-    <div class="experience row">
-        <div class="col-md-4">
-            
-        </div>
-        <div class="col-md-8">
-            <p><strong>Annou Aprann</strong></p>
-            <p class="fw-lighter">Passionate about empowering others, I share my knowledge on my YouTube channel, <strong><a target="_blank" href="https://www.youtube.com/@AnnouAprann">Annou Aprann</a></strong> <i>(Let's Learn in Haitian Creole)</i>, 
-                and website, <strong><a target="_blank" href="https://www.annouaprann.net">annouaprann.net</a></strong>. Through these platforms, I provide free educational resources and tutorials targeted towards the Haitian community, 
-                fostering learning opportunities and giving back to the community I am proud to be a part of.
+          <div class="col-md-4">
+            <p class="fw-lighter">Febraury 2023</p>
+          </div>
+          <div class="col-md-8">
+            <p><strong>PyConFr 2023</strong></p>
+            <p class="fw-lighter">
+              Expanded my Python knowledge by participating in PyConFr, the
+              premier Python conference for the French community. I actively
+              contributed to the translation workshop, gaining a deeper
+              understanding of the language's core mechanisms. This hands-on
+              experience involved translating significant portions of the
+              official documentation, further solidifying my proficiency in
+              Python.
             </p>
-        </div>
-    </div>
-    <div class="experience row">
-        <div class="col-md-4">
-            
-        </div>
-        <div class="col-md-8">
-            <p><strong>Thev Academy</strong></p>
-            <p class="fw-lighter">Deepen my understanding and share my passion for computer science through my blog, 
-                <strong><a href="https://thev-academy.com" target="_blank">thev-academy.com</a></strong>. This platform allows me to explore various computer science topics in depth, 
-                share my knowledge and insights with others, and foster a community of learning and engagement 
-                around the field.
+            <p class="fw-lighter text-primary">
+              <i class="fa fa-map-marker-alt"></i> Bordeaux, France
             </p>
+          </div>
         </div>
-    </div>
-    <div class="experience row">
-        <div class="col-md-4">
-            
-        </div>
-        <div class="col-md-8">
-            <p><strong>Website building</strong></p>
-            <p class="fw-lighter">Passionate about bringing ideas to life online, 
-                I have independently developed and launched a diverse portfolio of websites. 
-                This experience has allowed me to hone my web development skills, explore various 
-                technologies, and tackle projects with different functionalities and objectives. 
-                Below, you can find some of the websites I have built:
+        <div class="experience row">
+          <div class="col-md-4">
+            <p class="fw-lighter">October 2022</p>
+          </div>
+          <div class="col-md-8">
+            <p><strong>PyConES 2022</strong></p>
+            <p class="fw-lighter">
+              Enriched my Python knowledge and connected with the Spanish Python
+              community at PyConES. This immersive conference provided valuable
+              learning opportunities and fostered collaboration among Python
+              enthusiasts.
             </p>
-            <ul>
-                <li>www.auzane.fr</li>
-                <li>www.essentielhaiti.com</li>
-                <li>www.editionsmilot.com</li>
-                <li>www.finitystory.com</li>
-            </ul>
+            <p class="fw-lighter text-primary">
+              <i class="fa fa-map-marker-alt"></i> Granada, Spain
+            </p>
+          </div>
         </div>
+        <div class="experience row">
+          <div class="col-md-4">
+            <p class="fw-lighter">October 2022</p>
+          </div>
+          <div class="col-md-8">
+            <p><strong>DjangoCon Europe 2022</strong></p>
+            <p class="fw-lighter">
+              Deepened my understanding of Django and connected with the
+              European Django community during DjangoCon Europe in Portugal.
+              This vibrant conference offered a wealth of insights into the
+              latest Django developments and best practices, fostering
+              collaboration and knowledge exchange among Django developers.
+            </p>
+            <p class="fw-lighter text-primary">
+              <i class="fa fa-map-marker-alt"></i> Porto, Portugal
+            </p>
+          </div>
+        </div>
+        <div class="experience row">
+          <div class="col-md-4">
+            <h4 class="fs-5">Udacity</h4>
+            <p class="fw-lighter">2020</p>
+          </div>
+          <div class="col-md-8">
+            <p><strong>Full Stack Foundation</strong></p>
+            <p class="fw-lighter">
+              This course was essentially about the CRUD operations. I have
+              learned how to model, design and develop a complete database. I
+              have learned to use SQLAlchemy to interact with the database
+              through python code using the Flask framework.
+            </p>
+            <p class="fw-lighter text-primary">
+              <i class="fa fa-map-marker-alt"></i> Online
+            </p>
+          </div>
+        </div>
+        <div class="experience row">
+          <div class="col-md-4">
+            <h4 class="fs-5">Udacity</h4>
+            <p class="fw-lighter">2020</p>
+          </div>
+          <div class="col-md-8">
+            <p><strong>Introduction to Computer Science with Python</strong></p>
+            <p class="fw-lighter">
+              In this course, I have learned the practical part of computer
+              operations using Python programming language. I have learned about
+              memory address, web crawler, and recursion. I was able to create a
+              search engine after completing this course.
+            </p>
+            <p class="fw-lighter text-primary">
+              <i class="fa fa-map-marker-alt"></i> Online
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <h3 class="display-4 mb-4">Career</h3>
+      <div class="experiences">
+        <div class="experience row">
+          <div class="col-md-4">
+            <h4 class="fs-5">Extramus</h4>
+            <p class="fw-lighter">Summer 2023</p>
+          </div>
+          <div class="col-md-8">
+            <p><strong>Full stack Web Developer - Internship</strong></p>
+            <p class="fw-lighter">
+              Leveraged my full-stack web development skills during a summer
+              internship (2023) at
+              <a href="https://www.extramus.eu/">Extramus</a> in Italy.
+              Contributed to the planning, development, and deployment of a
+              <a href="https://prenotazioni.negombo.it/"
+                >Booking web application</a
+              >
+              using Laravel (PHP framework) and React (frontend framework).
+              Gained valuable experience with PHP, Laravel, and the Axios
+              library for API communication.
+            </p>
+            <p class="fw-lighter text-primary">
+              <i class="fa fa-map-marker-alt"></i> Terranova da Sibari, Italy
+            </p>
+          </div>
+        </div>
+
+        <div class="experience row">
+          <div class="col-md-4">
+            <h4 class="fs-5">Editions Milot</h4>
+            <p class="fw-lighter">2021-2023</p>
+          </div>
+          <div class="col-md-8">
+            <p><strong>Graphic Designer / Web Master</strong></p>
+            <p class="fw-lighter">
+              <a href="https://www.editionsmilot.com/">Editions Milot</a> is a
+              Publishing agency and I am the one responsible for the layout,
+              cover of the book also for creating and managing the website.
+            </p>
+            <p class="fw-lighter text-primary">
+              <i class="fa fa-map-marker-alt"></i> Paris, France
+            </p>
+          </div>
+        </div>
+
+        <div class="experience row">
+          <div class="col-md-4">
+            <h4 class="fs-5">Cloud Campus</h4>
+            <p class="fw-lighter">2022</p>
+          </div>
+          <div class="col-md-8">
+            <p><strong>Teacher</strong></p>
+            <p class="fw-lighter">
+              Leveraged my expertise in modern web development by teaching
+              courses on BEM and Bootstrap at Cloud Campus, receiving positive
+              feedback from students for my clear explanations and engaging
+              teaching style."
+            </p>
+            <p class="fw-lighter text-primary">
+              <i class="fa fa-map-marker-alt"></i> Paris, France
+            </p>
+          </div>
+        </div>
+
+        <div class="experience row">
+          <div class="col-md-4">
+            <h4 class="fs-5">Doranco</h4>
+            <p class="fw-lighter">October 2021</p>
+          </div>
+
+          <div class="col-md-8">
+            <p><strong>Teacher</strong></p>
+            <p class="fw-lighter">
+              Shared my web development knowledge by briefly teaching
+              introductory courses on WordPress, HTML, and CSS at Doranco.
+            </p>
+            <p class="fw-lighter text-primary">
+              <i class="fa fa-map-marker-alt"></i> Paris, France
+            </p>
+          </div>
+        </div>
+
+        <div class="experience row">
+          <div class="col-md-4">
+            <h4 class="fs-5">Cabinet Mutation</h4>
+            <p class="fw-lighter">2014-2020</p>
+          </div>
+          <div class="col-md-8">
+            <p><strong>IT Manager</strong></p>
+            <p class="fw-lighter">
+              The Lawyer office deals different type of files and one has to
+              make sure that the files are organized in one place so they can be
+              retrieve at any moment. So, I had to put every computer on the
+              same network so they can communicate with each other.
+            </p>
+            <p class="fw-lighter text-primary">
+              <i class="fa fa-map-marker-alt"></i> Ouanaminthe, Haiti
+            </p>
+          </div>
+        </div>
+        <div class="experience row">
+          <div class="col-md-4">
+            <h4 class="fs-5">Michelet Entreprises</h4>
+            <p class="fw-lighter">2016-2021</p>
+          </div>
+          <div class="col-md-8">
+            <p><strong>IT Consultant</strong></p>
+            <p class="fw-lighter">
+              Michelet is a multi purpose enterprise. They have an Hotel (Don
+              Chelo), hardware Store (Michelet Matériaux de Construction), a
+              mall and a photography studio. My role was to help them with
+              purcharsing new computer and make sure they are update with the
+              latest software.
+            </p>
+            <p class="fw-lighter text-primary">
+              <i class="fa fa-map-marker-alt"></i> Ouanaminthe, Haiti
+            </p>
+          </div>
+        </div>
+        <div class="experience row">
+          <div class="col-md-4">
+            <h4 class="fs-5">Hope for Haiti Children’s Center</h4>
+            <p class="fw-lighter text-primary">2012-2015</p>
+          </div>
+          <div class="col-md-8">
+            <p><strong>Office Computer Teacher</strong></p>
+            <p class="fw-lighter">
+              At Hope for Haiti Children’s Center, I taught windows XP, vista
+              and 7. I also taught different software in the Microsoft Office
+              package (Word, Excel, PowerPoint, Access and Publisher).
+            </p>
+            <p class="fw-lighter text-primary">
+              <i class="fa fa-map-marker-alt"></i> Ouanaminthe, Haiti
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <h3 class="display-4 mb-4">Activities</h3>
+      <div class="experience row">
+        <div class="col-md-4"></div>
+        <div class="col-md-8">
+          <p><strong>Annou Aprann</strong></p>
+          <p class="fw-lighter">
+            Passionate about empowering others, I share my knowledge on my
+            YouTube channel,
+            <strong
+              ><a target="_blank" href="https://www.youtube.com/@AnnouAprann"
+                >Annou Aprann</a
+              ></strong
+            >
+            <i>(Let's Learn in Haitian Creole)</i>, and website,
+            <strong
+              ><a target="_blank" href="https://www.annouaprann.net"
+                >annouaprann.net</a
+              ></strong
+            >. Through these platforms, I provide free educational resources and
+            tutorials targeted towards the Haitian community, fostering learning
+            opportunities and giving back to the community I am proud to be a
+            part of.
+          </p>
+        </div>
+      </div>
+      <div class="experience row">
+        <div class="col-md-4"></div>
+        <div class="col-md-8">
+          <p><strong>Thev Academy</strong></p>
+          <p class="fw-lighter">
+            Deepen my understanding and share my passion for computer science
+            through my blog,
+            <strong
+              ><a href="https://thev-academy.com" target="_blank"
+                >thev-academy.com</a
+              ></strong
+            >. This platform allows me to explore various computer science
+            topics in depth, share my knowledge and insights with others, and
+            foster a community of learning and engagement around the field.
+          </p>
+        </div>
+      </div>
+      <div class="experience row">
+        <div class="col-md-4"></div>
+        <div class="col-md-8">
+          <p><strong>Website building</strong></p>
+          <p class="fw-lighter">
+            Passionate about bringing ideas to life online, I have independently
+            developed and launched a diverse portfolio of websites. This
+            experience has allowed me to hone my web development skills, explore
+            various technologies, and tackle projects with different
+            functionalities and objectives. Below, you can find some of the
+            websites I have built:
+          </p>
+          <ul>
+            <li>www.auzane.fr</li>
+            <li>www.essentielhaiti.com</li>
+            <li>www.editionsmilot.com</li>
+            <!-- <li>www.finitystory.com</li> -->
+          </ul>
+        </div>
+      </div>
     </div>
-</div>
 
-<!--Abilities -->
+    <!--Abilities -->
 
-<div class="white-bg">
-    <div id="abilities" class="container-sm container">
+    <div class="white-bg">
+      <div id="abilities" class="container-sm container">
         <h2 class="text-center display-2">Abilities</h2>
         <figure class="text-center">
-            <blockquote class="blockquote">
-              <p>For success, attitude is equally as important as ability.</p>
-            </blockquote>
-            <figcaption class="blockquote-footer">
-                Walter Scott in <cite title="Source Title">Guy Mannering</cite>
-            </figcaption>
-          </figure>
-        <hr>
+          <blockquote class="blockquote">
+            <p>For success, attitude is equally as important as ability.</p>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            Walter Scott in <cite title="Source Title">Guy Mannering</cite>
+          </figcaption>
+        </figure>
+        <hr />
         <h3 class="display-5">Skills</h3>
-    
-       <div class="row">
-        <div class="col-md-6">
-            <ul class="list-unstyled">
-                <li>
-                    <span class="ability-title">HTML 5</span>
-                    <span class="ability-score">
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                    </span>
-                </li>
-            </ul>
-            <ul class="list-unstyled">
-                <li>
-                    <span class="ability-title">CSS3</span>
-                    <span class="ability-score">
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                    </span>
-                </li>
-            </ul>
-            <ul class="list-unstyled">
-                <li>
-                    <span class="ability-title">Bootstrap Framework</span>
-                    <span class="ability-score">
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                    </span>
-                </li>
-            </ul>
-            <ul class="list-unstyled">
-                <li>
-                    <span class="ability-title">WordPress</span>
-                    <span class="ability-score">
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                    </span>
-                </li>
-            </ul>
-            <ul class="list-unstyled">
-                <li>
-                    <span class="ability-title">SASS/SCSS</span>
-                    <span class="ability-score">
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="far fa-star icon-score"></i>
-                        <i class="far fa-star icon-score"></i>
-                    </span>
-                </li>
-            </ul>
-            <ul class="list-unstyled">
-                <li>
-                    <span class="ability-title">JavaScript</span>
-                    <span class="ability-score">
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="far fa-star icon-score"></i>
-                        <i class="far fa-star icon-score"></i>
-                    </span>
-                </li>
-            </ul>
-            <ul class="list-unstyled">
-                <li>
-                    <span class="ability-title">Python</span>
-                    <span class="ability-score">
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="far fa-star icon-score"></i>
-                        <i class="far fa-star icon-score"></i>
-                    </span>
-                </li>
-            </ul>
-            <ul class="list-unstyled">
-                <li>
-                    <span class="ability-title">Laravel</span>
-                    <span class="ability-score">
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="far fa-star icon-score"></i>
-                    </span>
-                </li>
-            </ul>
-            <ul class="list-unstyled">
-                <li>
-                    <span class="ability-title">MySQL</span>
-                    <span class="ability-score">
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="far fa-star icon-score"></i>
-                    </span>
-                </li>
-            </ul>
-            <ul class="list-unstyled">
-                <li>
-                    <span class="ability-title">Rust</span>
-                    <span class="ability-score">
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="far fa-star icon-score"></i>
-                        <i class="far fa-star icon-score"></i>
-                    </span>
-                </li>
-            </ul>
-        </div>
-        <div class="col-md-6">
-            <ul class="list-unstyled">
-                <li>
-                    <span class="ability-title">Django</span>
-                    <span class="ability-score">
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="far fa-star icon-score"></i>
-                    </span>
-                </li>
-            </ul>
-            <ul class="list-unstyled">
-                <li>
-                    <span class="ability-title">Flask</span>
-                    <span class="ability-score">
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="far fa-star icon-score"></i>
-                    </span>
-                </li>
-            </ul>
-            <ul class="list-unstyled">
-                <li>
-                    <span class="ability-title">Haskell</span>
-                    <span class="ability-score">
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="far fa-star icon-score"></i>
-                        <i class="far fa-star icon-score"></i>
-                    </span>
-                </li>
-            </ul>
-            <ul class="list-unstyled">
-                <li>
-                    <span class="ability-title">Java</span>
-                    <span class="ability-score">
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="far fa-star icon-score"></i>
-                        <i class="far fa-star icon-score"></i>
-                        <i class="far fa-star icon-score"></i>
-                    </span>
-                </li>
-            </ul>
-            <ul class="list-unstyled">
-                <li>
-                    <span class="ability-title">BEM</span>
-                    <span class="ability-score">
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="far fa-star icon-score"></i>
-                    </span>
-                </li>
-            </ul>
-            <ul class="list-unstyled">
-                <li>
-                    <span class="ability-title">React JS</span>
-                    <span class="ability-score">
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="far fa-star icon-score"></i>
-                        <i class="far fa-star icon-score"></i>
-                    </span>
-                </li>
-            </ul>
-            <ul class="list-unstyled">
-                <li>
-                    <span class="ability-title">React Native</span>
-                    <span class="ability-score">
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="far fa-star icon-score"></i>
-                        <i class="far fa-star icon-score"></i>
-                    </span>
-                </li>
-            </ul>
-            <ul class="list-unstyled">
-                <li>
-                    <span class="ability-title">Command Line Interface</span>
-                    <span class="ability-score">
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="far fa-star icon-score"></i>
-                        <i class="far fa-star icon-score"></i>
-                    </span>
-                </li>
-            </ul>
-            <ul class="list-unstyled">
-                <li>
-                    <span class="ability-title">C</span>
-                    <span class="ability-score">
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="far fa-star icon-score"></i>
-                        <i class="far fa-star icon-score"></i>
-                    </span>
-                </li>
-            </ul>
-            <ul class="list-unstyled">
-                <li>
-                    <span class="ability-title">Project Management</span>
-                    <span class="ability-score">
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="far fa-star icon-score"></i>
-                        <i class="far fa-star icon-score"></i>
-                    </span>
-                </li>
-            </ul>
-        </div>
-       </div>
-    <hr>
-       <h3 class="display-5">Languages</h3>
-    
-       <div class="row">
-        <div class="col-md-6">
-            <ul class="list-unstyled">
-                <li>
-                    <span class="ability-title">Haitian Creole</span>
-                    <span class="ability-score">
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                    </span>
-                </li>
-            </ul>
-            <ul class="list-unstyled">
-                <li>
-                    <span class="ability-title">French</span>
-                    <span class="ability-score">
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                    </span>
-                </li>
-            </ul>
-            <ul class="list-unstyled">
-                <li>
-                    <span class="ability-title">English</span>
-                    <span class="ability-score">
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="far fa-star icon-score"></i>
-                    </span>
-                </li>
-            </ul>
-            
-        </div>
-        <div class="col-md-6">
-           
-            <ul class="list-unstyled">
-                <li>
-                    <span class="ability-title">Spanish</span>
-                    <span class="ability-score">
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="far fa-star icon-score"></i>
-                        <i class="far fa-star icon-score"></i>
-                    </span>
-                </li>
-            </ul>
-            <ul class="list-unstyled">
-                <li>
-                    <span class="ability-title">German</span>
-                    <span class="ability-score">
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="far fa-star icon-score"></i>
-                        <i class="far fa-star icon-score"></i>
-                    </span>
-                </li>
-            </ul>
-            <ul class="list-unstyled">
-                <li>
-                    <span class="ability-title">Italian</span>
-                    <span class="ability-score">
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="far fa-star icon-score"></i>
-                        <i class="far fa-star icon-score"></i>
-                        <i class="far fa-star icon-score"></i>
-                    </span>
-                </li>
-            </ul>
-            </div>
-       </div>
-    <hr>
-    
-    <h3 class="display-5">Tools</h3>
-    
-       <div class="row">
-        <div class="col-md-6">
-            <ul class="list-unstyled">
-                <li>
-                    <span class="ability-title">MS Office</span>
-                    <span class="ability-score">
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                    </span>
-                </li>
-            </ul>
-            <ul class="list-unstyled">
-                <li>
-                    <span class="ability-title">Windows</span>
-                    <span class="ability-score">
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                    </span>
-                </li>
-            </ul>
-            <ul class="list-unstyled">
-                <li>
-                    <span class="ability-title">MacOS</span>
-                    <span class="ability-score">
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="far fa-star icon-score"></i>
-                    </span>
-                </li>
-            </ul>
-            <ul class="list-unstyled">
-                <li>
-                    <span class="ability-title">Linux</span>
-                    <span class="ability-score">
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="far fa-star icon-score"></i>
-                        <i class="far fa-star icon-score"></i>
-                    </span>
-                </li>
-            </ul>
-        </div>
-        <div class="col-md-6">
-            <ul class="list-unstyled">
-                <li>
-                    <span class="ability-title">Adobe Creative Suite</span>
-                    <span class="ability-score">
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="far fa-star icon-score"></i>
-                    </span>
-                </li>
-            </ul>
-            <ul class="list-unstyled">
-                <li>
-                    <span class="ability-title">Figma</span>
-                    <span class="ability-score">
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="far fa-star icon-score"></i>
-                    </span>
-                </li>
-            </ul>
-            <ul class="list-unstyled">
-                <li>
-                    <span class="ability-title">Git/GitHub</span>
-                    <span class="ability-score">
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="fas fa-star icon-score filled"></i>
-                        <i class="far fa-star icon-score"></i>
-                    </span>
-                </li>
-            </ul>
-
-        </div>
-       </div>
-    </div>
-</div>
-
-<div id="projects" class="container">
-    <h2 class="text-center display-2">Projects</h2>
-    <figure class="text-center">
-        <blockquote class="blockquote">
-          <p>Every project is an opportunity to learn, to figure out problems and challenges, to invent and reinvent.</p>
-        </blockquote>
-        <figcaption class="blockquote-footer">
-            David Rockwell<cite title="Source Title"></cite>
-        </figcaption>
-      </figure>
-    <hr>
-</div>
-
-<div class="container-fluid pb-5 mx-auto w-75">
-    <div class="row pb-5">
-        <div class="col-sm">
-            <div class="card border-0 mt-3">
-                <img src="../assets/domino.jpg" alt="Domino project" class="card-img-top">
-                <div class="card-body rounded-bottom p-4">
-                    <h5 class="card-title fw-bold text-secondary display-5">Dominoes</h5>
-                    <p class="card-text">This dominoes game is designed for two players. 
-                        Each player will take 7 shuffled bones to start the game and, 14 bones will be apart.
-                        This game will create based on Object Oriented Programming using Python</p>
-                    <a href="https://github.com/Thevenel/Dominoes-project" class="btn btn-primary text-white">View project</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm">
-            <div class="card border-0 mt-3">
-                <img src="../assets/drum-kit.jpg" alt="Drum kit Game" class="card-img-top">
-                <div class="card-body rounded-bottom p-4">
-                    <h5 class="card-title fw-bold text-secondary display-5">Drum kit Game</h5>
-                    <p class="card-text">I love music and I want to express it using programming. I created a drum using HTML, CSS and Vanilla JS. The player can play it using the keyboard.
-                        I'm not a master in drum, but I really love playing it. Let's Play! </p>
-                    <a href="https://github.com/Thevenel/drum-kit" class="btn btn-primary text-white">View project</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm">
-            <div class="card border-0 mt-3">
-                <img src="../assets/smartphone.jpg"  alt="Goal App" class="card-img-top">
-                <div class="card-body rounded-bottom p-4">
-                    <h5 class="card-title fw-bold text-secondary display-5">Goal Ap</h5>
-                    <p class="card-text">Tracking your goal is the best way keep make sure you keep working on it.
-                        I created this App using React Native to write tho goal I must I achieve. It's a cross-platform App, it is accessible on web, Android and iOS.</p>
-                    <a href="https://github.com/Thevenel/goalApp" class="btn btn-primary text-white">View project</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="text-center">
-        
-        <a href="https://github.com/Thevenel" class="btn btn-primary text-white"> <i class="fab fa-github text-secondary"></i> See more on my GitHub</a>
-    </div>
-    </div>
-<div class="blue-bg py-5">
-    <div id="contact" class="container-sm">
-        <h2 class="display-2 text-center">Contact</h2>
-        <figure class="text-center text-white">
-            <blockquote class="blockquote">
-              <p>The meeting of two personalities is like the contact of two chemical substances: if there is any reaction, both are transformed.</p>
-            </blockquote>
-            <figcaption class="blockquote-footer">
-                Carl Jung<cite title="Source Title">Modern Man in Search of a Soul</cite>
-            </figcaption>
-          </figure>
 
         <div class="row">
-            <div class="col-md-6"></div>
-            <div class="col-md-6"></div>
+          <div class="col-md-6">
+            <ul class="list-unstyled">
+              <li>
+                <span class="ability-title">HTML 5</span>
+                <span class="ability-score">
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                </span>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li>
+                <span class="ability-title">CSS3</span>
+                <span class="ability-score">
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                </span>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li>
+                <span class="ability-title">Bootstrap Framework</span>
+                <span class="ability-score">
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                </span>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li>
+                <span class="ability-title">WordPress</span>
+                <span class="ability-score">
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                </span>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li>
+                <span class="ability-title">SASS/SCSS</span>
+                <span class="ability-score">
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="far fa-star icon-score"></i>
+                  <i class="far fa-star icon-score"></i>
+                </span>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li>
+                <span class="ability-title">TypeScript/Javascript</span>
+                <span class="ability-score">
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="far fa-star icon-score"></i>
+                </span>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li>
+                <span class="ability-title">Python</span>
+                <span class="ability-score">
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="far fa-star icon-score"></i>
+                </span>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li>
+                <span class="ability-title">Laravel</span>
+                <span class="ability-score">
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="far fa-star icon-score"></i>
+                </span>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li>
+                <span class="ability-title">MySQL</span>
+                <span class="ability-score">
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="far fa-star icon-score"></i>
+                </span>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li>
+                <span class="ability-title">Rust</span>
+                <span class="ability-score">
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="far fa-star icon-score"></i>
+                  <i class="far fa-star icon-score"></i>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-unstyled">
+              <li>
+                <span class="ability-title">Django</span>
+                <span class="ability-score">
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="far fa-star icon-score"></i>
+                </span>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li>
+                <span class="ability-title">Flask</span>
+                <span class="ability-score">
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="far fa-star icon-score"></i>
+                </span>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li>
+                <span class="ability-title">Haskell</span>
+                <span class="ability-score">
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="far fa-star icon-score"></i>
+                  <i class="far fa-star icon-score"></i>
+                </span>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li>
+                <span class="ability-title">Java</span>
+                <span class="ability-score">
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="far fa-star icon-score"></i>
+                  <i class="far fa-star icon-score"></i>
+                </span>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li>
+                <span class="ability-title">BEM</span>
+                <span class="ability-score">
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="far fa-star icon-score"></i>
+                </span>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li>
+                <span class="ability-title">React JS</span>
+                <span class="ability-score">
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="far fa-star icon-score"></i>
+                  <i class="far fa-star icon-score"></i>
+                </span>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li>
+                <span class="ability-title">Angular</span>
+                <span class="ability-score">
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="far fa-star icon-score"></i>
+                  <i class="far fa-star icon-score"></i>
+                </span>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li>
+                <span class="ability-title">Command Line Interface</span>
+                <span class="ability-score">
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="far fa-star icon-score"></i>
+                </span>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li>
+                <span class="ability-title">C</span>
+                <span class="ability-score">
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="far fa-star icon-score"></i>
+                  <i class="far fa-star icon-score"></i>
+                </span>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li>
+                <span class="ability-title">Project Management</span>
+                <span class="ability-score">
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="far fa-star icon-score"></i>
+                </span>
+              </li>
+            </ul>
+          </div>
         </div>
+        <hr />
+        <h3 class="display-5">Languages</h3>
+
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="list-unstyled">
+              <li>
+                <span class="ability-title">Haitian Creole</span>
+                <span class="ability-score">
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                </span>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li>
+                <span class="ability-title">French</span>
+                <span class="ability-score">
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                </span>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li>
+                <span class="ability-title">English</span>
+                <span class="ability-score">
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="far fa-star icon-score"></i>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-unstyled">
+              <li>
+                <span class="ability-title">Spanish</span>
+                <span class="ability-score">
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="far fa-star icon-score"></i>
+                </span>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li>
+                <span class="ability-title">German</span>
+                <span class="ability-score">
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="far fa-star icon-score"></i>
+                  <i class="far fa-star icon-score"></i>
+                </span>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li>
+                <span class="ability-title">Italian</span>
+                <span class="ability-score">
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="far fa-star icon-score"></i>
+                  <i class="far fa-star icon-score"></i>
+                  <i class="far fa-star icon-score"></i>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+
+        <h3 class="display-5">Tools</h3>
+
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="list-unstyled">
+              <li>
+                <span class="ability-title">MS Office</span>
+                <span class="ability-score">
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                </span>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li>
+                <span class="ability-title">Windows</span>
+                <span class="ability-score">
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                </span>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li>
+                <span class="ability-title">MacOS</span>
+                <span class="ability-score">
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="far fa-star icon-score"></i>
+                </span>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li>
+                <span class="ability-title">Linux</span>
+                <span class="ability-score">
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="far fa-star icon-score"></i>
+                  <i class="far fa-star icon-score"></i>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-unstyled">
+              <li>
+                <span class="ability-title">Adobe Creative Suite</span>
+                <span class="ability-score">
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="far fa-star icon-score"></i>
+                </span>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li>
+                <span class="ability-title">Figma</span>
+                <span class="ability-score">
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="far fa-star icon-score"></i>
+                </span>
+              </li>
+            </ul>
+            <ul class="list-unstyled">
+              <li>
+                <span class="ability-title">Git/GitHub</span>
+                <span class="ability-score">
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="fas fa-star icon-score filled"></i>
+                  <i class="far fa-star icon-score"></i>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-    
+
+    <div id="projects" class="container">
+      <h2 class="text-center display-2">Projects</h2>
+      <figure class="text-center">
+        <blockquote class="blockquote">
+          <p>
+            Every project is an opportunity to learn, to figure out problems and
+            challenges, to invent and reinvent.
+          </p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          David Rockwell<cite title="Source Title"></cite>
+        </figcaption>
+      </figure>
+      <hr />
+    </div>
+
+    <div class="container-fluid pb-5 mx-auto w-75">
+      <div class="row pb-5">
+        <div class="col-sm">
+          <div class="card border-0 mt-3">
+            <img
+              src="../assets/domino.jpg"
+              alt="Domino project"
+              class="card-img-top"
+            />
+            <div class="card-body rounded-bottom p-4">
+              <h5 class="card-title fw-bold text-secondary display-5">
+                Dominoes
+              </h5>
+              <p class="card-text">
+                This dominoes game is designed for two players. Each player will
+                take 7 shuffled bones to start the game and, 14 bones will be
+                apart. This game will create based on Object Oriented
+                Programming using Python
+              </p>
+              <a
+                href="https://github.com/Thevenel/Dominoes-project"
+                class="btn btn-primary text-white"
+                >View project</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card border-0 mt-3">
+            <img
+              src="../assets/drum-kit.jpg"
+              alt="Drum kit Game"
+              class="card-img-top"
+            />
+            <div class="card-body rounded-bottom p-4">
+              <h5 class="card-title fw-bold text-secondary display-5">
+                Drum kit Game
+              </h5>
+              <p class="card-text">
+                I love music and I want to express it using programming. I
+                created a drum using HTML, CSS and Vanilla JS. The player can
+                play it using the keyboard. I'm not a master in drum, but I
+                really love playing it. Let's Play!
+              </p>
+              <a
+                href="https://github.com/Thevenel/drum-kit"
+                class="btn btn-primary text-white"
+                >View project</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card border-0 mt-3">
+            <img
+              src="../assets/smartphone.jpg"
+              alt="Goal App"
+              class="card-img-top"
+            />
+            <div class="card-body rounded-bottom p-4">
+              <h5 class="card-title fw-bold text-secondary display-5">
+                Goal Ap
+              </h5>
+              <p class="card-text">
+                Tracking your goal is the best way keep make sure you keep
+                working on it. I created this App using React Native to write
+                tho goal I must I achieve. It's a cross-platform App, it is
+                accessible on web, Android and iOS.
+              </p>
+              <a
+                href="https://github.com/Thevenel/goalApp"
+                class="btn btn-primary text-white"
+                >View project</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <a
+          href="https://github.com/Thevenel"
+          class="btn btn-primary text-white"
+        >
+          <i class="fab fa-github text-secondary"></i> See more on my GitHub</a
+        >
+      </div>
+    </div>
+    <div class="blue-bg py-5">
+      <div id="contact" class="container-sm">
+        <h2 class="display-2 text-center">Contact</h2>
+        <figure class="text-center text-white">
+          <blockquote class="blockquote">
+            <p>
+              The meeting of two personalities is like the contact of two
+              chemical substances: if there is any reaction, both are
+              transformed.
+            </p>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            Carl Jung<cite title="Source Title"
+              >Modern Man in Search of a Soul</cite
+            >
+          </figcaption>
+        </figure>
+
+        <div class="row">
+          <div class="col-md-6"></div>
+          <div class="col-md-6"></div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
