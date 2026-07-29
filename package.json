@@ -1,27 +1,25 @@
 {
-  "name": "portfolio-resume",
-  "version": "1.0.0",
-  "description": "Thevenel's interactive resume",    
-  "source":["./src/index.html", "./src/js/main.js", "./src/scss/styles.scss"]
-    ,
+  "name": "thevenel-software-engineer-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Thevenel Joazard's bilingual software engineering portfolio",
+  "source": [
+    "./src/index.html"
+  ],
   "scripts": {
     "start": "parcel src/*.html",
     "predeploy": "rm -rf dist && parcel build --public-url ./",
     "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-
   "keywords": [
-    "Full Stack",
-    "Developper",
-    "Thevenel",
-    "Joazard",
-    "HTML",
-    "Python",
-    "Django",
-    "React",
-    "Java",
-    "Web Developper"
+    "software engineer",
+    "backend",
+    "java",
+    "python",
+    "spring boot",
+    "portfolio"
+    
   ],
   "author": "Thevenel",
   "license": "ISC",
@@ -36,6 +34,8 @@
     "parcel": "^2.8.3"
   },
   "devDependencies": {
+    "@parcel/packager-raw-url": "^2.8.3",
+    "@parcel/transformer-jsonld": "^2.8.3",
     "@parcel/transformer-sass": "^2.8.3"
   }
 }
